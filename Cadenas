@@ -1,0 +1,19 @@
+Console.WriteLine("Escriba la palabra:")
+Dim word As String = Console.ReadLine
+Dim l As Integer = Len(word)
+Dim p As String = Left(word, 1)
+Dim u As String = Right(word, 1)
+If l >= 5 Then
+    Console.WriteLine("Longitud de: " & l & " caracteres")
+    Console.WriteLine("Primer caracter: " & p)
+    Console.WriteLine("Ultimo caracter: " & u)
+    Console.WriteLine("Seleccione el caracter a ver.")
+    Dim c As String
+    c = InStr(1, word, "a")
+    Console.WriteLine("El caracter elegido fue: " & c)
+    Dim r As String
+    r = StrReverse(word)
+    Console.WriteLine("Cambio de posiciones: " & r)
+Else
+    Console.WriteLine("El minimo de caracteres debe ser 5 para poder ejecutar el programa.")
+End If
