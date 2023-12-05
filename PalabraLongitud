@@ -1,0 +1,17 @@
+    Sub Main(args As String())
+        Console.WriteLine("Escriba las tres palabras, separandolas con un enter")
+        Dim u As String = Console.ReadLine
+        Dim o As String = Console.ReadLine
+        Dim i As String = Console.ReadLine
+        Dim a As String = Len(u)
+        Dim b As String = Len(o)
+        Dim c As String = Len(i)
+        If a > b And a > c Then
+            Console.WriteLine("La palabra " & u & " es la mas larga con " & a & " caracteres")
+        ElseIf b > a And b > c Then
+            Console.WriteLine("La palabra " & o & " es la mas larga con " & b & " caracteres")
+        ElseIf c > a And c > b Then
+            Console.WriteLine("La palabra " & i & " es la mas larga con " & c & " caracteres")
+        End If
+    End Sub
+End Module
